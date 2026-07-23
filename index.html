@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>The Last Bloom — For Musfirah ❤️</title>
+
+<meta name="theme-color"
+content="#ff8fb8">
+
+<meta name="description"
+content="The Last Bloom — A cinematic emotional website.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+BACKGROUND EFFECTS
+=========================== -->
+
+<div id="aurora"></div>
+
+<div id="sparkles"></div>
+
+<div id="petals"></div>
+
+<div id="fireflies"></div>
+
+<div id="cursorGlow"></div>
+
+<!-- ===========================
+AUDIO
+=========================== -->
+
+<audio id="bgMusic" loop>
+
+<source
+src="assets/bgmusic.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<audio id="galleryMusic" loop>
+
+<source
+src="assets/gallerysong.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<audio id="clickSound">
+
+<source
+src="assets/click.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<!-- ===========================
+WELCOME SCREEN
+=========================== -->
+
+<section
+id="welcome"
+class="screen active">
+
+<div class="glass hero">
+
+<h1>
+
+The Last Bloom
+
+</h1>
+
+<h2>
+
+For Musfirah ❤️
+
+</h2>
+
+<p>
+
+Some flowers bloom only once...
+
+Some memories stay forever...
+
+</p>
+
+<button
+id="startButton">
+
+Open My Heart
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===========================
+ENVELOPE
+=========================== -->
+
+<section
+id="envelope"
+class="screen">
+
+<div
+id="envelopeBox"
+class="envelope">
+
+<div class="envelopeBack"></div>
+
+<div
+id="letter"
+class="letter">
+
+<h2>
+
+Dear Musfirah,
+
+</h2>
+
+<p>
+
+Tap gently...
+
+A little piece of my heart
+is waiting inside.
+
+</p>
+
+</div>
+
+<div
+id="flap"
+class="flap">
+
+</div>
+
+</div>
+
+<p class="tapText">
+
+Tap the envelope ❤️
+
+</p>
+
+</section>
+
+<!-- ===========================
+STORY BOOK
+=========================== -->
+
+<section
+id="story"
+class="screen">
+
+<div class="book">
+
+<div
+class="page">
+
+<h2>
+
+Our Story
+
+</h2>
+
+<p
+id="storyText">
+
+</p>
+
+<button
+id="nextStory">
+
+Turn Page →
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+GALLERY
+=========================== -->
+
+<section
+id="gallery"
+class="screen">
+
+<div class="galleryOverlay">
+
+</div>
+
+<div class="galleryFrame">
+
+<img
+id="galleryImage"
+src="assets/photo1.jpg"
+alt="Memory">
+
+<div
+class="galleryCaption">
+
+<h2
+id="captionTitle">
+
+</h2>
+
+<p
+id="captionText">
+
+</p>
+
+</div>
+
+<div
+class="progressBar">
+
+<div
+id="progress">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+MEMORY WALL
+=========================== -->
+
+<section
+id="memoryWall"
+class="screen">
+
+<h1>Memory Wall ❤️</h1>
+
+<div class="memoryBoard">
+
+<div class="memoryNote"
+data-message="Your smile always made my day brighter.">
+🌸 First Smile
+</div>
+
+<div class="memoryNote"
+data-message="Some memories never fade away.">
+📸 Beautiful Day
+</div>
+
+<div class="memoryNote"
+data-message="Thank you for every little moment.">
+💌 Forever
+</div>
+
+<div class="memoryNote"
+data-message="If I could rewind time, I'd choose us again.">
+🌙 One Wish
+</div>
+
+<div class="memoryNote"
+data-message="You'll always be my last bloom.">
+🌺 Last Bloom
+</div>
+
+</div>
+
+<div id="memoryPopup">
+
+<div class="popupCard">
+
+<h2>Hidden Memory</h2>
+
+<p id="popupMessage"></p>
+
+<button id="closeMemory">
+Close
+</button>
+
+</div>
+
+</div>
+
+<button id="toNightSky">
+Continue ✨
+</button>
+
+</section>
+
+<!-- ===========================
+NIGHT SKY
+=========================== -->
+
+<section
+id="nightSky"
+class="screen">
+
+<div id="moon"></div>
+
+<div id="shootingStars"></div>
+
+<div id="stars"></div>
+
+<div id="messageBox">
+
+<div class="glass">
+
+<h2 id="starTitle">
+✨ Hidden Memory
+</h2>
+
+<p id="starMessage"></p>
+
+<button id="closeStar">
+Close
+</button>
+
+</div>
+
+</div>
+
+<button id="toGarden">
+Walk Into The Garden 🌸
+</button>
+
+</section>
+
+<!-- ===========================
+FLOWER GARDEN
+=========================== -->
+
+<section
+id="garden"
+class="screen">
+
+<div class="glass gardenCard">
+
+<h1>
+The Last Bloom 🌸
+</h1>
+
+<div id="flowerField">
+
+</div>
+
+<p>
+
+Every flower reminds me
+of a beautiful memory.
+
+Some flowers fade...
+
+Some remain forever.
+
+</p>
+
+<button id="toFinal">
+
+One Last Page ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FINAL SCREEN
+=========================== -->
+
+<section
+id="final"
+class="screen">
+
+<div class="glass finalCard">
+
+<div id="heart">
+
+❤️
+
+</div>
+
+<h1>
+
+Thank You
+
+</h1>
+
+<p>
+
+No matter where life takes us...
+
+Thank you for being one of the
+most beautiful chapters of my life.
+
+I wish you happiness,
+peace and endless smiles.
+
+🌸
+
+</p>
+
+<button id="restart">
+
+Watch Again
+
+</button>
+
+</div>
+
+</section>
+<!-- ===========================
+LOADING SCREEN
+=========================== -->
+
+<div id="loadingScreen">
+
+<div class="loaderContent">
+
+<div class="loaderFlower">
+🌸
+</div>
+
+<h2>
+Preparing Something Beautiful...
+</h2>
+
+<div class="loadingBar">
+
+<div id="loadingProgress"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===========================
+MUSIC PERMISSION
+=========================== -->
+
+<div id="musicOverlay">
+
+<div class="glass musicCard">
+
+<h2>
+🎵 Best Experience
+</h2>
+
+<p>
+
+For the best experience,
+please turn your volume on.
+
+</p>
+
+<button id="enterWebsite">
+
+Enter Website
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ===========================
+HIDDEN EASTER EGG
+=========================== -->
+
+<div id="secretHeart">
+
+❤️
+
+</div>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<p>
+
+Made with ❤️
+for Musfirah
+
+</p>
+
+</footer>
+
+<!-- ===========================
+SCRIPT
+=========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
