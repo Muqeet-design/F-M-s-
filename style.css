@@ -637,9 +637,21 @@ font-family:'Cormorant Garamond',serif;
 
 font-size:60px;
 
-margin-bottom:15px;
-
 text-align:center;
+
+line-height:1.15;
+
+margin-top:-20px;
+
+margin-bottom:50px;
+
+}
+
+#memoryPage h1 span{
+
+display:block;
+
+margin-top:8px;
 
 }
 
