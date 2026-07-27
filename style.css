@@ -677,9 +677,8 @@ width:100%;
     background: #fff;
     border-radius:20px;
     box-shadow:0 20px 40px rgba(0,0,0,.45);
-}
 
-transition:all .8s ease;
+transition:all .4s ease;
 }
 
 #memoryImage:hover{
