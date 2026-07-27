@@ -137,6 +137,7 @@ memoryMusic.play();
 showPage(memoryPage);
 
 galleryIndex=0;
+    firstLoad = true;
 
 showGallery();
 
