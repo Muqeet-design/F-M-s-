@@ -159,53 +159,51 @@ const nextBtn = document.getElementById("nextBtn");
 const counter = document.getElementById("counter");
 
 // ================================
-
 const gallery=[
 
 {
 image:"photo1.jpg",
-title:"The Smile I Never Forgot",
-text:"No matter how many times I see this photo, it still makes me stop for a moment."
+title:"The First One I Couldn't Forget",
+text:"Some pictures don't ask to be remembered—they simply never leave."
 },
 
 {
 image:"photo2.jpg",
-title:"One of My Favourite Pictures",
-text:"Some photos don't just capture a moment—they become a place your heart keeps returning to."
+title:"A Quiet Kind of Beautiful",
+text:"Even silence felt softer whenever I looked at this picture."
 },
 
 {
 image:"photo3.jpg",
-title:"A Quiet Kind of Beautiful",
-text:"There was always something peaceful about seeing you smile, even through a picture."
+title:"Where The Light Found You",
+text:"Some moments shine so naturally that they stay with you forever."
 },
 
 {
 image:"photo4.jpg",
-title:"The Version I Remember",
-text:"Time moves forward, but this moment always stays exactly the same."
+title:"The Smile I Kept Missing",
+text:"A simple smile, yet somehow it stayed in my thoughts the longest."
 },
 
 {
 image:"photo5.jpg",
-title:"Still My Favourite",
-text:"I've looked at this picture more times than I can count, and somehow it never feels ordinary."
+title:"The Day Time Stood Still",
+text:"If one memory could stay untouched forever, maybe it would be this one."
 },
 
 {
 image:"photo6.jpg",
-title:"Frozen in Time",
-text:"Some moments deserve to stay exactly as they were, untouched by time."
+title:"Still My Favorite Picture",
+text:"No matter how many days pass, I always end up looking at this again."
 },
 
 {
 image:"photo7.jpg",
-title:"One Last Look",
-text:"Maybe they're just photographs... but to me, they'll always mean a little more than that."
+title:"The Last Photo In My Heart",
+text:"Maybe it's just a picture now, but to me it still feels like a memory that never faded."
 }
 
 ];
-
 // ================================
 
 let galleryIndex=0;
