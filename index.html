@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>One Last Conversation</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+BACKGROUND MUSIC
+========================= -->
+
+<audio id="bgMusic" loop>
+
+<source src="assets/bg-music.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="memoryMusic" loop>
+
+<source src="assets/memory-music.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- =========================
+PAGE 1
+========================= -->
+
+<section id="introPage" class="page">
+
+<div id="stars"></div>
+
+<div class="intro">
+
+<h1>
+
+One Last Conversation
+
+</h1>
+
+<p>
+
+Some words become heavier...
+
+the longer they remain unsaid.
+
+</p>
+
+<button id="startBtn">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+PAGE 2
+THE LETTER
+========================= -->
+
+<section id="letterPage" class="page hidden">
+
+<div class="backgroundOverlay"></div>
+
+<div class="desk">
+
+<div class="letterWrapper">
+
+<p class="tapText">
+
+Tap the letter
+
+</p>
+
+<div id="letter">
+
+<!-- Folded Letter -->
+
+<div class="letterFront">
+
+<div class="waxSeal"></div>
+
+</div>
+
+<!-- Open Letter -->
+
+<div class="letterInside">
+
+<div class="paper">
+
+<h2>
+
+Dear Musfirah,
+
+</h2>
+
+<p>
+
+I'm not asking for an answer today.
+
+</p>
+
+<p>
+
+I'm only asking for one conversation,
+
+whenever you're ready.
+
+</p>
+
+<p>
+
+Not to argue.
+
+</p>
+
+<p>
+
+Not to prove who's right or wrong.
+
+</p>
+
+<p>
+
+Simply to understand each other.
+
+</p>
+
+<div class="signature">
+
+— Abdul Muqeet
+
+</div>
+
+<button id="continueToMemories">
+
+Continue
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+PAGE 3
+MEMORIES
+========================= -->
+
+<section id="memoryPage" class="page hidden">
+
+<div class="memoryBackground"></div>
+
+<div class="memoryContent">
+
+<h1>
+
+Memories
+
+</h1>
+
+<p class="memorySubtitle">
+
+Some moments never really leave us.
+
+</p>
+
+<div class="gallery">
+
+<img id="memoryImage"
+src="assets/photo1.jpg"
+alt="Memory">
+
+<div class="memoryText">
+
+<p id="memoryCaption">
+
+Some smiles never leave your memory.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="galleryControls">
+
+<button id="previousPhoto">
+
+Previous
+
+</button>
+
+<span id="photoCount">
+
+1 / 7
+
+</span>
+
+<button id="nextPhoto">
+
+Next
+
+</button>
+
+</div>
+
+<button id="continueAfterGallery">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+PAGE 4
+THINGS I NEVER SAID
+========================= -->
+
+<section id="unsaidPage" class="page hidden">
+
+<div class="unsaidContainer">
+
+<h1>
+
+Things I Never Said
+
+</h1>
+
+<p class="unsaidSub">
+
+Sometimes silence hides more than words.
+
+</p>
+
+<div class="typewriterBox">
+
+<p id="typewriterText">
+
+</p>
+
+</div>
+
+<button id="continueToFinal">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 5
+ONE LAST MESSAGE
+========================= -->
+
+<section id="finalPage" class="page hidden">
+
+<div class="finalContainer">
+
+<h1>
+
+One Last Message
+
+</h1>
+
+<div class="messagePaper">
+
+<p>
+
+If you ever feel that this silence has lasted long enough,
+
+I'd be grateful if we could talk once—
+
+not to argue,
+
+not to prove who's right or wrong,
+
+but simply to understand each other.
+
+</p>
+
+<br>
+
+<p>
+
+Thank you for taking the time to go through this little journey.
+
+It was never meant to prove who was right or wrong,
+
+only to express what my heart couldn't say.
+
+</p>
+
+</div>
+
+<button id="finishBtn">
+
+Finish
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+PAGE 6
+GOODBYE
+========================= -->
+
+<section id="goodbyePage" class="page hidden">
+
+<div class="goodbyeContainer">
+
+<h1>
+
+Thank You
+
+</h1>
+
+<p>
+
+Thank you for reading.
+
+</p>
+
+<p>
+
+Take care of yourself.
+
+</p>
+
+<button id="watchAgain">
+
+Read Again
+
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
