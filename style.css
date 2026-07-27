@@ -1155,3 +1155,42 @@ font-size:17px;
 }
 
 }
+
+
+
+/* ===== FIX ===== */
+
+.page{
+    z-index:10;
+}
+
+#stars{
+    z-index:1;
+}
+
+#petals{
+    z-index:2;
+}
+
+.intro,
+.table,
+.gallery,
+.paper,
+.controls,
+#typewriter{
+    position:relative;
+    z-index:20;
+}
+
+#letterPage::before{
+    z-index:1;
+}
+
+.table{
+    z-index:5;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
