@@ -164,44 +164,44 @@ const gallery=[
 
 {
 image:"photo1.jpg",
-title:"The First Smile",
-text:"Some smiles stay in our hearts forever."
+title:"The Smile I Never Forgot",
+text:"No matter how many times I see this photo, it still makes me stop for a moment."
 },
 
 {
 image:"photo2.jpg",
-title:"A Beautiful Day",
-text:"The smallest moments become the biggest memories."
+title:"One of My Favourite Pictures",
+text:"Some photos don't just capture a moment—they become a place your heart keeps returning to."
 },
 
 {
 image:"photo3.jpg",
-title:"Peace",
-text:"Some memories don't fade even after time passes."
+title:"A Quiet Kind of Beautiful",
+text:"There was always something peaceful about seeing you smile, even through a picture."
 },
 
 {
 image:"photo4.jpg",
-title:"Happiness",
-text:"Your happiness was always enough for me."
+title:"The Version I Remember",
+text:"Time moves forward, but this moment always stays exactly the same."
 },
 
 {
 image:"photo5.jpg",
-title:"Golden Moments",
-text:"Every picture tells a story words never could."
+title:"Still My Favourite",
+text:"I've looked at this picture more times than I can count, and somehow it never feels ordinary."
 },
 
 {
 image:"photo6.jpg",
-title:"Time",
-text:"Time changed everything except these memories."
+title:"Frozen in Time",
+text:"Some moments deserve to stay exactly as they were, untouched by time."
 },
 
 {
 image:"photo7.jpg",
-title:"One Last Memory",
-text:"I only wished we could have one last conversation."
+title:"One Last Look",
+text:"Maybe they're just photographs... but to me, they'll always mean a little more than that."
 }
 
 ];
