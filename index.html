@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>One Last Conversation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Music -->
+
+<audio id="bgMusic" loop>
+    <source src="bg-music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="memoryMusic" loop>
+    <source src="memory-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Effects -->
+
+<div id="stars"></div>
+<div id="petals"></div>
+
+<!-- ================= INTRO ================= -->
+
+<section id="introPage" class="page active">
+
+<div class="intro">
+
+<h1>One Last Conversation</h1>
+
+<p>
+Some words become heavier...
+the longer they remain unsaid.
+</p>
+
+<button id="startBtn">
+Continue
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= LETTER ================= -->
+
+<section id="letterPage" class="page">
+
+<div class="table">
+
+<div id="letter">
+
+<div class="letterFront">
+
+<div class="wax"></div>
+
+</div>
+
+<div class="letterInside">
+
+<h2>Dear Musfirah,</h2>
+
+<p>
+
+I'm not asking for forgiveness immediately.
+
+</p>
+
+<p>
+
+I only hope you'll understand what I couldn't say.
+
+</p>
+
+<p>
+
+Maybe someday...
+
+we could have one last conversation.
+
+</p>
+
+<button id="letterBtn">
+
+Continue
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MEMORIES ================= -->
+
+<section id="memoryPage" class="page">
+
+<h1>Memories</h1>
+
+<div class="gallery">
+
+<img id="memoryImage" src="photo1.jpg">
+
+<h2 id="memoryTitle"></h2>
+
+<p id="memoryText"></p>
+
+</div>
+
+<div class="controls">
+
+<button id="prevBtn">
+Previous
+</button>
+
+<span id="counter">
+1 / 7
+</span>
+
+<button id="nextBtn">
+Next
+</button>
+
+</div>
+
+<button id="memoryContinue">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- ================= UNSAID ================= -->
+
+<section id="unsaidPage" class="page">
+
+<h1>
+
+Things I Never Said
+
+</h1>
+
+<div id="typewriter"></div>
+
+<button id="unsaidBtn">
+
+Continue
+
+</button>
+
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section id="finalPage" class="page">
+
+<div class="paper">
+
+<h1>
+
+One Last Message
+
+</h1>
+
+<p>
+
+If you ever feel that this silence has lasted long enough,
+
+I'd be grateful if we could talk once—
+
+not to argue,
+
+not to prove who's right or wrong,
+
+but simply to understand each other.
+
+</p>
+
+<br>
+
+<p>
+
+Thank you for taking the time to go through this little journey.
+
+It was never meant to prove who was right or wrong,
+
+only to express what my heart couldn't say.
+
+</p>
+
+<button id="finishBtn">
+
+Finish
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= THANK YOU ================= -->
+
+<section id="goodbyePage" class="page">
+
+<h1>
+
+Thank You
+
+</h1>
+
+<p>
+
+Take care of yourself.
+
+</p>
+
+<button id="restartBtn">
+
+Read Again
+
+</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
