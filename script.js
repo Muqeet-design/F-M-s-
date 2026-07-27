@@ -136,8 +136,15 @@ memoryMusic.play();
 
 showPage(memoryPage);
 
-};
+galleryIndex=0;
 
+showGallery();
+
+clearInterval(galleryTimer);
+
+galleryTimer=setInterval(nextGallery,5000);
+
+};
 
 // ======================================
 // MEMORIES GALLERY
@@ -256,20 +263,6 @@ galleryIndex=gallery.length-1;
 showGallery();
 
 }
-
-// ================================
-
-showGallery();
-
-galleryTimer=setInterval(()=>{
-
-if(memoryPage.classList.contains("active")){
-
-nextGallery();
-
-}
-
-},5000);
 
 // ================================
 
