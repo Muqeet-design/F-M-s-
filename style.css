@@ -347,8 +347,7 @@ backdrop-filter:blur(2px);
 /* ==========================
 TABLE
 ========================== */
-
-.table{
+ .table{
 
 position:relative;
 
@@ -361,7 +360,9 @@ display:flex;
 
 justify-content:center;
 
-align-items:center;
+align-items:flex-start;
+
+padding-top:90px;
 
 }
 
