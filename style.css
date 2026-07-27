@@ -993,6 +993,10 @@ linear-gradient(
 #111,
 #050505);
 
+display:flex;
+justify-content:center;
+align-items:center;
+
 padding:30px;
 
 }
@@ -1000,7 +1004,6 @@ padding:30px;
 .paper{
 
 width:90%;
-
 max-width:850px;
 
 background:#fffdf7;
@@ -1011,11 +1014,11 @@ padding:45px;
 
 color:#333;
 
-box-shadow:
-0 25px 60px rgba(0,0,0,.4);
+box-shadow:0 25px 60px rgba(0,0,0,.4);
 
-    max-height:90vh;
-    overflow-y:auto;
+max-height:85vh;
+overflow-y:auto;
+
 }
 
 .paper h1{
