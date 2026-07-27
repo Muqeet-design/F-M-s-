@@ -658,15 +658,15 @@ z-index:5;
 #memoryImage{
 
 width:360px;
-
 height:500px;
 
-object-fit:cover;
+object-fit:contain;
+
+background:#111;
 
 border-radius:24px;
 
-box-shadow:
-0 25px 60px rgba(0,0,0,.45);
+box-shadow:0 25px 60px rgba(0,0,0,.45);
 
 transition:all .8s ease;
 
@@ -797,32 +797,42 @@ transform:translateY(-3px);
 /* ==========================
 PHOTO ANIMATION
 ========================== */
-
-.photoFade{
-
-animation:photoFade .8s ease;
-
+.photoOut{
+animation:photoOut .5s ease forwards;
 }
 
-@keyframes photoFade{
+.photoIn{
+animation:photoIn .7s ease forwards;
+}
+
+@keyframes photoOut{
 
 0%{
-
-opacity:0;
-
-transform:scale(1.08);
-
+opacity:1;
+transform:translateX(0) scale(1);
 }
 
 100%{
+opacity:0;
+transform:translateX(-80px) scale(.95);
+}
 
+}
+
+@keyframes photoIn{
+
+0%{
+opacity:0;
+transform:translateX(80px) scale(1.05);
+}
+
+100%{
 opacity:1;
-
-transform:scale(1);
-
+transform:translateX(0) scale(1);
 }
 
 }
+
 
 /* ==========================
 RESPONSIVE
