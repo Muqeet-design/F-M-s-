@@ -213,47 +213,45 @@ let galleryTimer;
 // ================================
 
 
-
-
 function showGallery(){
 
-    memoryImage.classList.remove("photoIn","photoOut");
+    if(firstLoad){
 
+        memoryImage.src = gallery[galleryIndex].image;
+        memoryTitle.textContent = gallery[galleryIndex].title;
+        memoryText.textContent = gallery[galleryIndex].text;
+        counter.textContent = (galleryIndex+1)+" / "+gallery.length;
+
+        firstLoad = false;
+        return;
+    }
+
+    memoryImage.classList.remove("photoIn","photoOut");
     memoryImage.classList.add("photoOut");
 
-    const img = new Image();
+    setTimeout(()=>{
 
-    img.onload = () => {
+        memoryImage.src = gallery[galleryIndex].image;
+        memoryTitle.textContent = gallery[galleryIndex].title;
+        memoryText.textContent = gallery[galleryIndex].text;
+        counter.textContent = (galleryIndex+1)+" / "+gallery.length;
 
-        setTimeout(()=>{
+        memoryImage.classList.remove("photoOut");
+        void memoryImage.offsetWidth;
+        memoryImage.classList.add("photoIn");
 
-            memoryImage.src = img.src;
-
-            memoryTitle.textContent = gallery[galleryIndex].title;
-
-            memoryText.textContent = gallery[galleryIndex].text;
-
-            counter.textContent = (galleryIndex+1)+" / "+gallery.length;
-
-            memoryImage.classList.remove("photoOut");
-
-            void memoryImage.offsetWidth;
-
-            memoryImage.classList.add("photoIn");
-
-        },500);
-
-    };
-
-    img.src = gallery[galleryIndex].image;
+    },500);
 
 }
+
+
 
 // ================================
 
 function nextGallery(){
 
 galleryIndex++;
+    let firstLoad = true;
 
 if(galleryIndex>=gallery.length){
 
