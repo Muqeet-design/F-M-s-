@@ -214,33 +214,40 @@ let galleryTimer;
 
 
 
+
 function showGallery(){
 
     memoryImage.classList.remove("photoIn","photoOut");
 
     memoryImage.classList.add("photoOut");
 
-    setTimeout(()=>{
+    const img = new Image();
 
-        memoryImage.src = gallery[galleryIndex].image;
+    img.onload = () => {
 
-        memoryTitle.textContent = gallery[galleryIndex].title;
+        setTimeout(()=>{
 
-        memoryText.textContent = gallery[galleryIndex].text;
+            memoryImage.src = img.src;
 
-        counter.textContent = (galleryIndex+1)+" / "+gallery.length;
+            memoryTitle.textContent = gallery[galleryIndex].title;
 
-        memoryImage.classList.remove("photoOut");
+            memoryText.textContent = gallery[galleryIndex].text;
 
-        void memoryImage.offsetWidth;
+            counter.textContent = (galleryIndex+1)+" / "+gallery.length;
 
-        memoryImage.classList.add("photoIn");
+            memoryImage.classList.remove("photoOut");
 
-    },500);
+            void memoryImage.offsetWidth;
+
+            memoryImage.classList.add("photoIn");
+
+        },500);
+
+    };
+
+    img.src = gallery[galleryIndex].image;
 
 }
-
-
 
 // ================================
 
