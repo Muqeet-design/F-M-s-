@@ -907,11 +907,19 @@ linear-gradient(
 #0d0d0d,
 #050505);
 
-padding:40px;
+padding:80px 20px 40px;
 
 text-align:center;
 
+justify-content:flex-start;
+
+align-items:center;
+
+overflow-y:auto;
+
 }
+
+
 
 #unsaidPage h1{
 
@@ -983,7 +991,6 @@ transform:translateY(-4px);
 /* ===================================
    PAGE 5 - FINAL MESSAGE
 =================================== */
-
 #finalPage{
 
 background:
@@ -993,11 +1000,13 @@ linear-gradient(
 #111,
 #050505);
 
-display:flex;
-justify-content:center;
+padding:60px 20px;
+
+justify-content:flex-start;
+
 align-items:center;
 
-padding:30px;
+overflow-y:auto;
 
 }
 
@@ -1015,9 +1024,6 @@ padding:45px;
 color:#333;
 
 box-shadow:0 25px 60px rgba(0,0,0,.4);
-
-max-height:85vh;
-overflow-y:auto;
 
 }
 
