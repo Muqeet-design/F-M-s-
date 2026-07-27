@@ -216,27 +216,27 @@ let galleryTimer;
 
 function showGallery(){
 
-memoryImage.classList.add("photoOut");
+    memoryImage.classList.remove("photoIn","photoOut");
 
-setTimeout(()=>{
+    memoryImage.classList.add("photoOut");
 
-memoryImage.src=gallery[galleryIndex].image;
+    setTimeout(()=>{
 
-memoryTitle.textContent=gallery[galleryIndex].title;
+        memoryImage.src = gallery[galleryIndex].image;
 
-memoryText.textContent=gallery[galleryIndex].text;
+        memoryTitle.textContent = gallery[galleryIndex].title;
 
-counter.textContent=(galleryIndex+1)+" / "+gallery.length;
+        memoryText.textContent = gallery[galleryIndex].text;
 
-memoryImage.classList.remove("photoOut");
+        counter.textContent = (galleryIndex+1)+" / "+gallery.length;
 
-memoryImage.classList.add("photoFade");
+        memoryImage.classList.remove("photoOut");
 
-setTimeout(()=>{
-memoryImage.classList.remove("photoFade");
-},800);
+        void memoryImage.offsetWidth;
 
-},300);
+        memoryImage.classList.add("photoIn");
+
+    },500);
 
 }
 
