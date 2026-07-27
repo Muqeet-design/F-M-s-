@@ -214,24 +214,30 @@ let galleryTimer;
 
 // ================================
 
+
 function showGallery(){
 
-memoryImage.classList.remove("photoFade");
+memoryImage.classList.remove("photoIn");
 
-void memoryImage.offsetWidth;
+memoryImage.classList.add("photoOut");
 
-memoryImage.src=gallery[galleryIndex].image;
+setTimeout(()=>{
 
-memoryTitle.textContent=gallery[galleryIndex].title;
+memoryImage.src = gallery[galleryIndex].image;
 
-memoryText.textContent=gallery[galleryIndex].text;
+memoryTitle.textContent = gallery[galleryIndex].title;
 
-counter.textContent=(galleryIndex+1)+" / "+gallery.length;
+memoryText.textContent = gallery[galleryIndex].text;
 
-memoryImage.classList.add("photoFade");
+counter.textContent = (galleryIndex+1)+" / "+gallery.length;
+
+memoryImage.classList.remove("photoOut");
+
+memoryImage.classList.add("photoIn");
+
+},500);
 
 }
-
 // ================================
 
 function nextGallery(){
